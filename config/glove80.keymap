@@ -27,6 +27,35 @@
             tapping-term-ms = <200>;
             bindings = <&mo 2>, <&to 2>;
         };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <16 6 18 6 7 18 19 30 31 42 43 60 61 5 16 17 28 29 40 41 55 56 57 58 59 72 73 74 75 8 9 18 19 20 21 30 31 32 33 42 43 44 45 60 61 62 63 76 77 78 79 52 53 54 70 71 69>;
+            retro-tap;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 12 13 14 15 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 52 53 54 64 65 66 67 68 69 70 71 55 56 57 72 73 74>;
+            retro-tap;
+            hold-trigger-on-release;
+            quick-tap-ms = <175>;
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <150>;
+        };
     };
 
     macros {
@@ -60,12 +89,12 @@
 
         engrammer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&mo 3   &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&kp DOWN_ARROW  &kp UP_ARROW  &kp A        &kp B         &kp C                                                                           &kp D         &kp E         &kp F        &kp LEFT_ARROW  &kp RIGHT_ARROW
+&trans          &kp N1        &kp N2       &kp N3        &kp N4        &kp N5                                                    &kp N6  &kp N7        &kp N8        &kp N9       &kp N0          &kp BSLH
+&trans          &kp B         &kp Y        &kp O         &kp U         &trans                                                    &trans  &kp L         &kp D         &kp W        &kp V           &kp Z
+&kp Z           &hml LGUI C   &hml LALT I  &hml LCTRL E  &hml LSHFT A  &trans                                                    &trans  &hmr RSHFT H  &hmr RCTRL T  &hmr RALT S  &hmr RWIN N     &kp Q
+&trans          &kp G         &kp X        &kp J         &kp K         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp R         &kp M         &kp F        &kp P           &trans
+&mo 3           &trans        &trans       &trans        &trans                &trans  &trans  &trans    &trans  &trans  &trans          &trans        &trans        &trans       &trans          &trans
             >;
         };
 
