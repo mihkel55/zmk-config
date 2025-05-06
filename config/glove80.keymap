@@ -12,9 +12,10 @@
 
 // layers
 
-#define DEFAULT 0
-#define LOWER 1
-#define MAGIC 2
+#define ENGRAMMER 0
+#define FACTORY 1
+#define LOWER 2
+#define MAGIC 3
 
 / {
     behaviors {
@@ -94,12 +95,12 @@
 &trans          &kp B         &kp Y        &kp O         &kp U         &trans                                                    &trans  &kp L         &kp D         &kp W        &kp V           &kp Z
 &kp Z           &hml LGUI C   &hml LALT I  &hml LCTRL E  &hml LSHFT A  &trans                                                    &trans  &hmr RSHFT H  &hmr RCTRL T  &hmr RALT S  &hmr RWIN N     &kp Q
 &trans          &kp G         &kp X        &kp J         &kp K         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp R         &kp M         &kp F        &kp P           &trans
-&mo 3           &trans        &trans       &trans        &trans                &trans  &trans  &trans    &trans  &trans  &trans          &trans        &trans        &trans       &trans          &trans
+&mo MAGIC       &trans        &trans       &trans        &trans                &trans  &trans  &trans    &trans  &trans  &trans          &trans        &trans        &trans       &trans          &trans
             >;
         };
 
-        default_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
+        factory_layer {
+            // -------------------------------------------------------------------------------------------------------------------------------
             // |  F1   |  F2 |  F3 |  F4  |  F5  |                                                               |  F6   |  F7   |  F8  |   F9  |  F10 |
             // |  =    |  1  |  2  |  3   |  4   |  5   |                                                 |  6   |   7   |   8   |  9   |   0   |   -  |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                                                 |  Y   |   U   |   I   |  O   |   P   |   \  |
@@ -113,7 +114,7 @@
 &kp TAB    &kp Q     &kp W    &kp E     &kp R      &kp T                                                                      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
 &kp ESC    &kp A     &kp S    &kp D     &kp F      &kp G                                                                      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
 &kp GRAVE  &kp Z     &kp X    &kp C     &kp V      &kp B   &kp LSHFT  &kp LCTRL  &layer_td    &kp LGUI  &kp RCTRL  &kp RSHFT  &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp PG_UP
-&mo 3      &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp LALT     &kp RALT  &kp RET    &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
+&mo MAGIC  &kp HOME  &kp END  &kp LEFT  &kp RIGHT          &kp BSPC   &kp DEL    &kp LALT     &kp RALT  &kp RET    &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &kp PG_DN
             >;
         };
 
