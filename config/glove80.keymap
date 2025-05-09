@@ -124,7 +124,7 @@
             bindings = <&out OUT_BLE &bt BT_SEL 1>;
         };
 
-        bt_4: bt_profile_macro_2 {
+        bt_2: bt_profile_macro_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&out OUT_BLE &bt BT_SEL 2>;
