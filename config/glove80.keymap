@@ -26,7 +26,7 @@
         // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
 
         // 
-        #define TAPPING_RESOLUTION = 200 
+        #define TAPPING_RESOLUTION 200 
 
         //
         // SPACE_HOLDING_TIME defines how long you need to hold (milliseconds)
