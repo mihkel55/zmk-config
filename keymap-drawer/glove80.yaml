@@ -1,0 +1,491 @@
+layout: {zmk_keyboard: glove80}
+layers:
+  engrammer:
+  - DOWN ARROW
+  - UP ARROW
+  - A
+  - B
+  - C
+  - D
+  - E
+  - F
+  - LEFT ARROW
+  - RIGHT ARROW
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - \
+  - '`'
+  - B
+  - Y
+  - O
+  - U
+  - ''''
+  - ;
+  - L
+  - D
+  - W
+  - V
+  - Z
+  - Z
+  - {t: C, h: LGUI}
+  - {t: I, h: LALT}
+  - {t: E, h: LCTRL}
+  - {t: A, h: LSHFT}
+  - ','
+  - .
+  - {t: H, h: RSHFT}
+  - {t: T, h: RCTRL}
+  - {t: S, h: RALT}
+  - {t: N, h: RWIN}
+  - Q
+  - {t: LSHFT, h: sticky}
+  - G
+  - X
+  - J
+  - K
+  - '-'
+  - {t: ESC, h: function}
+  - Ctl+B
+  - Ctl+V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ENTER
+  - /
+  - R
+  - M
+  - F
+  - P
+  - {t: RSHFT, h: sticky}
+  - magic
+  - '`'
+  - '['
+  - ']'
+  - {t: LSHFT, h: sticky}
+  - {t: BACKSPACE, h: function}
+  - {t: DELETE, h: numbers}
+  - Ctl+C
+  - '&caps_word'
+  - {t: TAB, h: symbols}
+  - {t: SPACE, h: symbols}
+  - {t: RSHFT, h: sticky}
+  - Sft+(
+  - Sft+)
+  - \
+  - magic
+  factory: [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, '=', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, \, ESC, A, S,
+    D, F, G, H, J, K, L, ;, '''', '`', Z, X, C, V, B, LSHFT, LCTRL, '&layer_td', LGUI, RCTRL, RSHFT, N, M, ',', ., /, PG UP, magic, HOME, END, LEFT, RIGHT, BSPC,
+    DEL, LALT, RALT, RET, SPACE, UP, DOWN, '[', ']', PG DN]
+  lower:
+  - BRI DN
+  - BRI UP
+  - PREV
+  - NEXT
+  - PP
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - ''
+  - PAUSE BREAK
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - HOME
+  - (
+  - KP NUM
+  - KP EQUAL
+  - KP DIVIDE
+  - KP MULTIPLY
+  - PSCRN
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - UP
+  - ''
+  - END
+  - )
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP MINUS
+  - SLCK
+  - {t: ▽, type: trans}
+  - ''
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PG UP
+  - '%'
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP PLUS
+  - ''
+  - {t: ▽, type: trans}
+  - CMENU
+  - ''
+  - F11
+  - F12
+  - PG DN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: factory, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ','
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ENTER
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - CAPS
+  - INS
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 0
+  - KP 0
+  - KP DOT
+  - KP ENTER
+  - {t: ▽, type: trans}
+  magic:
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: engrammer, h: toggle}
+  - {t: factory, h: toggle}
+  - {t: lower, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB SPI
+  - RGB SAI
+  - RGB HUI
+  - RGB BRI
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - RGB SPD
+  - RGB SAD
+  - RGB HUD
+  - RGB BRD
+  - RGB EFF
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - '&sys_reset'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bt_2'
+  - '&bt_3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bt_0'
+  - '&bt_1'
+  - OUT USB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  symbols:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
+  - '['
+  - Sft+(
+  - Sft+)
+  - ']'
+  - .
+  - '`'
+  - {t: RSHFT, h: sticky}
+  - {t: RCTRL, h: sticky}
+  - {t: RALT, h: sticky}
+  - {t: RGUI, h: sticky}
+  - {t: ▽, type: trans}
+  - Sft+!
+  - ','
+  - Sft+{
+  - Sft+}
+  - ;
+  - Sft+?
+  - '`'
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - Sft+#
+  - Sft+^
+  - '='
+  - Sft+_
+  - Sft+$
+  - Sft+*
+  - Sft+"
+  - BSPC
+  - TAB
+  - SPACE
+  - RET
+  - {t: ▽, type: trans}
+  - Sft+~
+  - Sft+|
+  - '-'
+  - Sft+>
+  - .
+  - /
+  - \
+  - .
+  - Sft+*
+  - '8'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+*
+  - DEL
+  - Sft+TAB
+  - ESC
+  - ESC
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+&
+  - ''''
+  - Sft+"
+  - Sft++
+  - Sft+%
+  - 'Sft+:'
+  - Sft+@
+  - '2'
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  numbers:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - RET
+  - SPACE
+  - TAB
+  - DEL
+  - HOME
+  - Sft+~
+  - Sft+^
+  - Sft+#
+  - Sft+$
+  - Sft+!
+  - Sft+@
+  - {t: A, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: D, h: sticky}
+  - Sft+G
+  - '7'
+  - '8'
+  - '9'
+  - 'Sft+:'
+  - ;
+  - {t: B, h: sticky}
+  - {t: LGUI, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - {t: E, h: sticky}
+  - K
+  - '4'
+  - '5'
+  - '6'
+  - '-'
+  - Sft++
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: X, h: sticky}
+  - {t: F, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Sft+<
+  - Sft+>
+  - '='
+  - J
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - Sft+*
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Sft+_, h: sticky}
+  - {t: '-', h: sticky}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ','
+  - .
+  - '0'
+  - '['
+  - Sft+(
+  - Sft+)
+  - ']'
+  - \
+  function:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - ENTER
+  - SPACE
+  - TAB
+  - DEL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F4
+  - F5
+  - F6
+  - F11
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F12
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
