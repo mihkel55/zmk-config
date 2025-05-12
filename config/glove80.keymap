@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
+#define HOST_OS 1
+#include "zmk-helpers/helper.h"
+
 // layers
 
 #define LAYER_ENGRAMMER 0
@@ -20,37 +23,38 @@
 #define LAYER_NUMBERS 5
 #define LAYER_FUNCTION 6
 
+
+// For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
+// Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
+// 
+#define TAPPING_RESOLUTION 200 
+
+//
+// SPACE_HOLDING_TIME defines how long you need to hold (milliseconds)
+// the space thumb key to activate.  Shorter holds are treated as taps.
+//
+#define SPACE_HOLDING_TIME (TAPPING_RESOLUTION + 20)
+
+//
+// SPACE_REPEAT_DECAY defines how much time you have left (milliseconds)
+// after tapping a key to hold it again in order to make it auto-repeat.
+//
+#define SPACE_REPEAT_DECAY TAPPING_RESOLUTION
+
+//
+// THUMB_HOLDING_TIME defines how long you need to hold (milliseconds)
+// a thumb key to activate a layer.  Shorter holds are treated as taps.
+//
+#define THUMB_HOLDING_TIME (TAPPING_RESOLUTION + 50)
+
+//
+// THUMB_REPEAT_DECAY defines how much time you have left (milliseconds)
+// after tapping a key to hold it again in order to make it auto-repeat.
+//
+#define THUMB_REPEAT_DECAY (TAPPING_RESOLUTION + 150)
+
 / {
     behaviors {
-        // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
-        // Configure it as a tap dance, so the first tap (or hold) is a &mo and the second tap is a &to
-
-        // 
-        #define TAPPING_RESOLUTION 200 
-
-        //
-        // SPACE_HOLDING_TIME defines how long you need to hold (milliseconds)
-        // the space thumb key to activate.  Shorter holds are treated as taps.
-        //
-        #define SPACE_HOLDING_TIME (TAPPING_RESOLUTION + 20)
-
-        //
-        // SPACE_REPEAT_DECAY defines how much time you have left (milliseconds)
-        // after tapping a key to hold it again in order to make it auto-repeat.
-        //
-        #define SPACE_REPEAT_DECAY TAPPING_RESOLUTION
-
-        //
-        // THUMB_HOLDING_TIME defines how long you need to hold (milliseconds)
-        // a thumb key to activate a layer.  Shorter holds are treated as taps.
-        //
-        #define THUMB_HOLDING_TIME (TAPPING_RESOLUTION + 50)
-
-        //
-        // THUMB_REPEAT_DECAY defines how much time you have left (milliseconds)
-        // after tapping a key to hold it again in order to make it auto-repeat.
-        //
-        #define THUMB_REPEAT_DECAY (TAPPING_RESOLUTION + 150)
 
 
 
