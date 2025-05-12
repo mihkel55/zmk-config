@@ -36,16 +36,16 @@ layers:
   - V
   - Z
   - Z
-  - {t: C, h: LGUI}
-  - {t: I, h: LALT}
-  - {t: E, h: LCTRL}
-  - {t: A, h: LSHFT}
+  - '&hml LGUI C'
+  - '&hml LALT I'
+  - '&hml LCTRL E'
+  - '&hml LSHFT A'
   - ','
   - .
-  - {t: H, h: RSHFT}
-  - {t: T, h: RCTRL}
-  - {t: S, h: RALT}
-  - {t: N, h: RWIN}
+  - '&hmr RSHFT H'
+  - '&hmr RCTRL T'
+  - '&hmr RALT S'
+  - '&hmr RWIN N'
   - Q
   - {t: LSHFT, h: sticky}
   - G
@@ -53,34 +53,34 @@ layers:
   - J
   - K
   - '-'
-  - {t: ESC, h: function}
-  - Ctl+B
+  - '&thumb 6 ESC'
+  - Ctl+C
   - Ctl+V
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ENTER
-  - /
+  - ESC
   - R
   - M
   - F
   - P
-  - {t: RSHFT, h: sticky}
+  - '&ee_o_tilde'
   - magic
   - '`'
   - '['
   - ']'
   - {t: LSHFT, h: sticky}
-  - {t: BACKSPACE, h: function}
-  - {t: DELETE, h: numbers}
-  - Ctl+C
+  - '&thumb 6 BACKSPACE'
+  - '&thumb 5 DELETE'
+  - Ctl+B
   - '&caps_word'
-  - {t: TAB, h: symbols}
-  - {t: SPACE, h: symbols}
-  - {t: RSHFT, h: sticky}
+  - '&thumb 4 TAB'
+  - '&space 4 SPACE'
   - Sft+(
   - Sft+)
-  - \
-  - magic
+  - '&ee_ue'
+  - '&ee_oe'
+  - '&ee_ae'
   factory: [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, '=', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, \, ESC, A, S,
     D, F, G, H, J, K, L, ;, '''', '`', Z, X, C, V, B, LSHFT, LCTRL, '&layer_td', LGUI, RCTRL, RSHFT, N, M, ',', ., /, PG UP, magic, HOME, END, LEFT, RIGHT, BSPC,
     DEL, LALT, RALT, RET, SPACE, UP, DOWN, '[', ']', PG DN]
@@ -259,8 +259,8 @@ layers:
   - {t: ▽, type: trans}
   - '`'
   - '['
-  - Sft+(
-  - Sft+)
+  - (
+  - )
   - ']'
   - .
   - '`'
@@ -269,39 +269,39 @@ layers:
   - {t: RALT, h: sticky}
   - {t: RGUI, h: sticky}
   - {t: ▽, type: trans}
-  - Sft+!
+  - '!'
   - ','
-  - Sft+{
-  - Sft+}
+  - '{'
+  - '}'
   - ;
-  - Sft+?
+  - '?'
   - '`'
   - LEFT
   - DOWN
   - UP
   - RIGHT
   - {t: ▽, type: trans}
-  - Sft+#
-  - Sft+^
+  - '#'
+  - ^
   - '='
-  - Sft+_
-  - Sft+$
-  - Sft+*
+  - _
+  - $
+  - '*'
   - Sft+"
   - BSPC
   - TAB
   - SPACE
   - RET
   - {t: ▽, type: trans}
-  - Sft+~
-  - Sft+|
+  - '~'
+  - <
+  - '|'
   - '-'
-  - Sft+>
-  - .
+  - '>'
   - /
   - \
   - .
-  - Sft+*
+  - '*'
   - '8'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -320,7 +320,7 @@ layers:
   - 'Sft+:'
   - Sft+@
   - '2'
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -398,7 +398,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: Sft+_, h: sticky}
   - {t: '-', h: sticky}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ','
   - .
@@ -461,7 +461,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
