@@ -95,17 +95,14 @@ ZMK_HOLD_TAP(hmr,
   ZMK_HOLD_TAP(thumb,
     flavor = "balanced";
     tapping-term-ms = <THUMB_HOLDING_TIME>;
-    quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
     require-prior-idle-ms = <150>;
     bindings = <&mo>, <&kp>;
     retro-tap;
   )
 
   ZMK_HOLD_TAP(space,
-    flavor = "balanced";
+    flavor = "hold-preferred";
     tapping-term-ms = <THUMB_HOLDING_TIME>;
-    quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
-    require-prior-idle-ms = <150>;
     bindings = <&mo>, <&kp>;
   )
   ZMK_MACRO(bt_0,
@@ -137,7 +134,7 @@ ZMK_LAYER(engrammer,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ╭─────────────┬──────────────┬──────────────╮ ╭─────────────┬──────────────┬──────────────╮ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LSHFT       &kp G         &kp X         &kp J         &kp K         &kp MINUS    &thumb FUNC ESC &kp LC(C)       &kp LC(V)      &kp RSHIFT     &kp RCTRL       &kp ENTER        &kp FSLH      &kp R         &kp M         &kp F         &kp P         &ee_o_tilde
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼──────────────┼──────────────┤ ├─────────────┼──────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &mo MAGIC       &kp GRAVE     &kp LBKT      &kp RBKT      &sk LSHFT                  &thumb NUM BACKSPACE &mo FUNC &kp LS(LC(V))    &kp LALT       &thumb MISC TAB &space SYMB SPACE              &kp LS(LPAR) &kp LS(RPAR) &ee_ue          &ee_oe        &ee_ae
+     &mo MAGIC       &kp GRAVE     &kp LBKT      &kp RBKT      &sk LSHFT                  &mo NUM         &mo FUNC        &kp LS(LC(V))  &kp LALT       &mo MISC &space SYMB SPACE       &kp LS(LPAR)  &kp LS(RPAR)  &ee_ue        &ee_oe       &ee_ae
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯ ╰─────────────┴──────────────┴──────────────╯ ╰─────────────┴──────────────┴──────────────╯ ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 )
 
@@ -153,7 +150,7 @@ ZMK_LAYER(gaming,
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ╭─────────────┬──────────────┬──────────────╮ ╭─────────────┬──────────────┬──────────────╮ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LSHFT       &kp G         &kp X         &kp J         &kp K         &kp MINUS    &thumb FUNC ESC &kp LC(C)       &kp LC(V)      &kp RSHIFT     &kp RCTRL       &kp ENTER        &kp FSLH      &kp R         &kp M         &kp F         &kp P         &ee_o_tilde
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤ ├─────────────┼──────────────┼──────────────┤ ├─────────────┼──────────────┼──────────────┤ ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &mo MAGIC       &kp GRAVE     &kp LBKT      &kp RBKT      &sk LSHFT                  &thumb NUM BACKSPACE &mo FUNC &kp LS(LC(V))    &kp LALT       &thumb MISC TAB &space SYMB SPACE              &kp LS(LPAR) &kp LS(RPAR) &ee_ue          &ee_oe        &ee_ae
+     &mo MAGIC       &kp GRAVE     &kp LBKT      &kp RBKT      &sk LSHFT                  &mo NUM             &mo FUNC &kp LS(LC(V))    &kp LALT       &mo MISC &space SYMB SPACE              &kp LS(LPAR) &kp LS(RPAR) &ee_ue          &ee_oe        &ee_ae
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯ ╰─────────────┴──────────────┴──────────────╯ ╰─────────────┴──────────────┴──────────────╯ ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 )
 
